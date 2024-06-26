@@ -25,10 +25,33 @@ body {
 #copy {
     background-color: white;
     color: grey;
+    display: none;
+}
+
+#ninguno {
+    display: None
 }
 
 #texto {
     color: #0A3871;
     font-weight: 500;
     font-size: 1.6em;
+}
+
+.parent-row {
+    height: calc(100vh - 20vh);
+}
+
+@media (max-width: 768px) {
+    .parent-row {
+        height: calc(100vh - 35vh);
+    }
+
+    #ninguno {
+        display: block;
+    }
+
+    #imagen {
+        display: none;
+    }
 }
